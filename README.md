@@ -11,6 +11,7 @@ First, find the API token in the Piwik interface by clicking "API" in the naviga
 
     <?php
 
+    require 'PiwikAPI.class.php';
     $api = new PiwikAPI('http://example.com/piwik', '0123apitokenhere');
     $users = $api->UsersManager->getUser(array('userLogin' => 'anonymous'));
     var_dump($users);
