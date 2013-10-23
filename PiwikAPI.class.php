@@ -58,3 +58,6 @@ class PiwikAPIPlugin {
         return $this->_api->call($full_method, $arguments[0]);
     }
 }
+
+class PiwikAPIError extends Exception {
+}
